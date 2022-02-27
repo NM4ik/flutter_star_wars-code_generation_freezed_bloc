@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:star_wars_code_generation/data/models/character.dart';
 import 'package:http/http.dart' as http;
+import 'package:star_wars_code_generation/data/models/image.dart';
 
 class CharacterApiProvider {
   final url = 'https://swapi.dev/api/people/';
@@ -16,4 +17,11 @@ class CharacterApiProvider {
       throw Exception();
     }
   }
+
+
+  // Future<Image> getImage(int index) async{
+  //   final response = await http.get(Uri.parse('https://starwars-visualguide.com/assets/img/characters/$index.jpg'));
+  //   return response;
+  // }
+
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:star_wars_code_generation/ui/pages/characters_page.dart';
 
+import 'constants.dart';
+
 void main() {
   runApp(const StarWarsApp());
 }
@@ -14,8 +16,8 @@ class StarWarsApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'StarWars',
       theme: ThemeData(
-        brightness: Brightness.light,
-        primaryColor: Colors.black,
+        // brightness: Brightness.light,
+        primaryColor: kBackgroundColor,
         fontFamily: 'Georgia',
         textTheme: const TextTheme(
           headline1: TextStyle(
@@ -23,7 +25,7 @@ class StarWarsApp extends StatelessWidget {
           headline2: TextStyle(
               fontSize: 30, fontWeight: FontWeight.w700, color: Colors.white),
           headline3: TextStyle(
-              fontSize: 24, color: Colors.white),
+              fontSize: 24, color: kTextColor, fontWeight: FontWeight.bold),
           bodyText1: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Colors.white),
           bodyText2: TextStyle(fontSize: 12, fontWeight: FontWeight.w200, color: Colors.white),
           caption: TextStyle(fontSize: 11, fontWeight: FontWeight.w100, color: Colors.grey),

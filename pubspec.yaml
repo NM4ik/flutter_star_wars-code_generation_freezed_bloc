@@ -38,6 +38,12 @@ dependencies:
   freezed_annotation: ^1.1.0
   json_annotation: ^4.4.0
 
+  # for images
+  cached_network_image: ^3.2.0
+
+  # for pagination
+  pull_to_refresh: ^2.0.0
+
   # equatable for overrides
   equatable: ^2.0.3
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:star_wars_code_generation/bloc/character_bloc.dart';
+import 'package:star_wars_code_generation/constants.dart';
 import 'package:star_wars_code_generation/data/repositories/respository.dart';
 import 'package:star_wars_code_generation/ui/widgets/character_list.dart';
 
@@ -13,7 +14,8 @@ class CharactersPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black54,
+        elevation: 0,
+        backgroundColor: kBackgroundColor,
         centerTitle: true,
         title: Text(
           'StarWars',
@@ -24,7 +26,7 @@ class CharactersPage extends StatelessWidget {
         create: (context) => CharacterBloc(characterRepository: repository),
         child: Container(
           child: const CharacterList(),
-          decoration: const BoxDecoration(color: Colors.black87),
+          decoration: const BoxDecoration(color: kBackgroundColor),
         ),
       ),
     );
